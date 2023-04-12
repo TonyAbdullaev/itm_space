@@ -1,0 +1,19 @@
+{
+  "name": "itm_space",
+  "version": "1.0.0",
+  "description": "For learning platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TonyAbdullaev/itm_space.git"
+  },
+  "author": "Tokhirbek Abdullaev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TonyAbdullaev/itm_space/issues"
+  },
+  "homepage": "https://github.com/TonyAbdullaev/itm_space#readme"
+}
