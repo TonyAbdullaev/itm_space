@@ -16,7 +16,15 @@
  * @returns {(number|undefined)}
  */
 function getWinner(points) {
-    return undefined;
+    const results = points.map((total) => {
+        const scoreOfCommands = total.split('-')
+        return Number(scoreOfCommands[0]) - Number(scoreOfCommands[1])
+    });
+    const final = results.reduce((prev, curr) => prev + curr, 0)
+    if (final === 0) {
+        return undefined
+    }
+    return final > 0 ? 1 : 2;
 }
 
 module.exports = getWinner;
