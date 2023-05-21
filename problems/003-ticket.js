@@ -14,7 +14,10 @@
  * @returns {boolean}
  */
 function checkTicket(number) {
-    return undefined;
+    // console.log(number.split('').splice(3))
+    const firstThree = number.split('').splice(0, 3).reduce((prev, curr) => Number(prev) + Number(curr))
+    const lastThree = number.split('').splice(3).reduce((prev, curr) => Number(prev) + Number(curr))
+    return firstThree === lastThree;
 }
 
 module.exports = checkTicket;
