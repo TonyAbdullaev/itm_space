@@ -13,7 +13,13 @@
  * @returns {number[]}
  */
 function union(a, b) {
-    return undefined;
+    const result = []
+    for (let number of a ) {
+        if (b.includes(number) && !result.includes(number)) {
+            result.push(number)
+        }
+    }
+    return result.sort((a, b) => a - b);
 }
 
 module.exports = union;
