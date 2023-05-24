@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5b7b8cc-39a8-4590-bbe2-216be6213b8c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/problems/008-palindrome.js" beforeDir="false" afterPath="$PROJECT_DIR$/problems/008-palindrome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problems/009-time-delta.js" beforeDir="false" afterPath="$PROJECT_DIR$/problems/009-time-delta.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

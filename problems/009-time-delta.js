@@ -16,8 +16,13 @@
  * @param {string} y
  * @returns {number} разница между x и y в секундах
  */
+// const [startH, startM, startS] = x.split(":")
+// const [endH, endM, endS] = x.split(":")
 function getTimeDelta(x, y) {
-    return undefined;
+    const start = x.split(":")
+    const end = y.split(":")
+    const [hour, minute, second] = end.map((value, index) => Number(value) - Number(start[index]))
+    return hour * 3600 + minute * 60 + second;
 }
 
 module.exports = getTimeDelta;
