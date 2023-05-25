@@ -18,7 +18,18 @@
  * @returns {number}
  */
 function getSpringMeltStreak(temperature) {
-    return undefined;
+    const steaks = [];
+    let count = 0;
+    for(const day of temperature) {
+        if (day > 0) {
+            count++;
+        }
+        if (day < 0) {
+            count = 0;
+        }
+        steaks.push(count)
+    }
+    return steaks.sort((a, b) => a - b)[steaks.length - 1];
 }
 
 module.exports = getSpringMeltStreak;
