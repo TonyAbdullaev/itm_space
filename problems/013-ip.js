@@ -19,7 +19,17 @@
  * @returns {boolean}
  */
 function isIpValid(address) {
-    return undefined;
+    const partsOfIp = address.split('.');
+    console.log(partsOfIp)
+    if (partsOfIp.length !== 4 ) {
+        return false
+    }
+    for (const ip of partsOfIp) {
+        if (Number(ip) < 0 || Number(ip) > 255) {
+            return false
+        }
+    }
+    return true;
 }
 
 module.exports = isIpValid;
