@@ -13,7 +13,10 @@
  * @returns {undefined|number}
  */
 function census(list) {
-    return -1;
+    const maleList = list.filter((value, index) => value.gender === 'Male')
+        .sort((a, b) => Number(a.age) - Number(b.age));
+    const result = list.indexOf(maleList[maleList.length - 1]);
+    return result !== -1 ? result + 1 : undefined;
 }
 
 module.exports = census;
